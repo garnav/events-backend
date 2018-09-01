@@ -7,6 +7,7 @@
                 {{ post.name }}
             </div>
         {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit_event' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.description }}</h1>
         <h1>{{ post.start_time }}</h1>
     </div>

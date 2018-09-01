@@ -17,6 +17,8 @@ urlpatterns = [
 	path('post/tag/<int:pk>/', views.post_detail_tag, name='post_detail_tag'),
 	path('post/event/', views.post_event, name='post_event'),
 	path('post/event/<int:pk>/', views.post_detail_event, name='post_detail_event'),
+	path('post/event/<int:pk>/edit/', views.post_edit_event, name='post_edit_event'),
+
 
 	path('post/location/', views.post_location, name='post_location'),
 	path('post/location/<int:pk>/', views.post_detail_location, name='post_detail_location'),
